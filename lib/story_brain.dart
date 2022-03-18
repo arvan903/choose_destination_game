@@ -4,6 +4,7 @@ import 'story.dart';
 //TODO: Step 5 - Create a new class called StoryBrain.
 class StoryBrain {
 //TODO: Step 7 - Uncomment the lines below to include storyData as a private property in StoryBrain. Hint: You might need to change something in story.dart to make this work.
+
   int _storyNumber = 0;
   List<Story> _storyData = [
     Story(
@@ -47,6 +48,8 @@ class StoryBrain {
   String getChoice2() {
     return _storyData[_storyNumber].choice2;
   }
+
+  void nextStory() {}
 }
 
 //TODO: Step 23 - Use the storyNumber property inside getStory(), getChoice1() and getChoice2() so that it gets the updated story and choices rather than always just the first (0th) one.
